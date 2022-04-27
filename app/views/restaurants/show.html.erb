@@ -1,4 +1,4 @@
-<h2>Restaurant Details:</h2>
+<h1>Restaurant Details:</h1>
 <p>
   <strong>Name:</strong>
   <%= @restaurant.name %>
@@ -19,7 +19,9 @@
   <%= @restaurant.category %>
 </p>
 
-<h3>Reviews:</h3>
+<hr>
+
+<h2>Reviews:</h2>
 <ul class="list-group">
   <% @restaurant.reviews.each do |review| %>
     <li class="list-group-item">
@@ -28,10 +30,6 @@
   <% end %>
 </ul>
 
-<br>
-
-<%= link_to 'Back', restaurants_path, class: "btn btn-primary" %>
- <%# <%= link_to 'Add a new review', new_restaurant_review_path(@restaurant) %>
 
 <hr>
 
@@ -42,3 +40,8 @@
   <%= f.input :rating %>
   <%= f.submit %>
 <% end %>
+
+<hr>
+
+<%= link_to 'Back', restaurants_path, class: "btn btn-primary" %>
+ <%# <%= link_to 'Add a new review', new_restaurant_review_path(@restaurant) %>

@@ -12,11 +12,15 @@
 @import "pages/index";
 
 main {
-  margin: 50px;
+  margin: 0 50px 30px 50px;
 }
 
 .list-group-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+h1 {
+  padding: 20px 0;
 }
