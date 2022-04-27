@@ -11,11 +11,15 @@
   </head>
 
   <body>
+
     <nav class="navbar navbar-light bg-light justify-content-between">
       <span class="navbar-brand mb-0 h1"><%= link_to 'Restaurants', restaurants_path %></span>
       <span class="navbar-brand mb-0 h1"><%= link_to 'Add New Restaurant', new_restaurant_path %></span>
     </nav>
 
-    <%= yield %>
+    <main>
+      <%= yield %>
+    </main>
+
   </body>
 </html>
