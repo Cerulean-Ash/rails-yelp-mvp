@@ -1,11 +1,13 @@
+<div class="container">
 
-<h1>Restaurants</h1>
+  <h1>Restaurants</h1>
 
-<ul class="list-group">
-  <% @restaurants.each do |restaurant| %>
-    <li class="list-group-item">
-      <%= restaurant.name %>
-      <span><%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary"%></span>
-    </li>
-  <% end %>
-</ul>
+  <ul class="list-group">
+    <% @restaurants.each do |restaurant| %>
+      <li class="list-group-item">
+        <%= restaurant.name %>
+        <span><%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary"%></span>
+      </li>
+    <% end %>
+  </ul>
+</div>
